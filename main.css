@@ -1,0 +1,17 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header nav.navbar {
+	padding: 20px 0;
+}
+header nav.navbar-light .navbar-collapse a.nav-link {
+	font-family: Dosis,Helvetica,Arial,sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #3b3331;
+}
+header nav.navbar-light .navbar-collapse a.nav-link.active, header nav.navbar-light .navbar-collapse a.nav-link:hover {
+	color: #d80019;
+}
