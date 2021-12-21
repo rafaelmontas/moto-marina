@@ -269,7 +269,7 @@ main .home-hero .overlay-text .text-container a:hover {
 }
 /* Tours Section */
 main .tours {
-	padding: 80px 16px;
+	padding: 80px 16px 40px;
 	font-family: 'Dosis', sans-serif;
 	max-width: 1140px;
 	margin: 0 auto;
@@ -335,6 +335,91 @@ main .tours .tour-cards .tour-card a .tour-intro p {
 main .tours .tour-cards .tour-card a .tour-intro span {
 	color: #5897cc;
 	font-weight: 700;
+}
+/* Testimonials section */
+main .testimonials {
+	background-color: #e7cb7cc7;
+	background: linear-gradient( 116deg, #f3e188, #3c818d);
+}
+main .testimonials .testimonial-wrapper {
+	padding: 80px 16px;
+	font-family: 'Dosis', sans-serif;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+main .testimonials .testimonial-container {
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0 0 5px 0 rgb(0 0 0 / 15%);
+	border-radius: 2px;
+}
+main .testimonials .testimonial-container::before {
+	content: "“";
+	left: -0.83333rem;
+	top: 2.22222rem;
+}
+main .testimonials .testimonial-container::after {
+	content: "“";
+	right: -0.83333rem;
+	bottom: 2.22222rem;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+main .testimonials .testimonial-container::before, main .testimonials .testimonial-container::after {
+	position: absolute;
+	z-index: 4;
+	font-family: Dosis,Helvetica,Arial,sans-serif;
+	font-size: 5.55556rem;
+	font-weight: 800;
+	text-align: center;
+	width: 3.77778rem;
+	height: 5rem;
+	line-height: 7.5rem;
+	background-color: #d80019;
+	color: #fff;
+}
+main .testimonials .testimonial-container .testimonial-title {
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 3.33333rem;
+	padding-bottom: 0;
+	margin-bottom: 1.5rem;
+	font-size: 1.66667rem;
+}
+main .testimonials .testimonial-container .testimonial-info {
+	position: relative;
+	padding: 3.33333rem 20%;
+	padding-top: 0;
+}
+main .testimonials .testimonial-container .testimonial-info .carousel-inner {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item blockquote {
+	font-size: 1.11111rem;
+	line-height: 1.5;
+	text-align: center;
+	margin-bottom: 1.44444rem;
+}
+main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item .testimonial-author-container {
+	text-align: center;
+}
+main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item .testimonial-author-container .testimonial-author {
+	display: inline-block;
+	color: #d80019;
+	font-family: Dosis,Helvetica,Arial,sans-serif;
+	font-weight: 800;
+	vertical-align: middle;
+	text-transform: uppercase;;
+}
+main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item .testimonial-author-container .testimonial-author cite {
+	font-style: normal;
+}
+main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item .testimonial-author-container .testimonial-rating {
+	color: #fac800;
+	margin-top: 10px;
 }
 
 
