@@ -397,6 +397,49 @@ main .testimonials .testimonial-container .testimonial-info .carousel-inner {
 	overflow: hidden;
 	position: relative;
 }
+main .testimonials .testimonial-container .testimonial-info .carousel-inner > .carousel-item.next {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+}
+main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item {
+	position: relative;
+	display: none;
+	transition: left .6s ease-in-out;
+
+	transition: -webkit-transform .6s ease-in-out;
+	transition: transform .6s ease-in-out;
+	transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+
+	/* left: 0;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0); */
+}
+main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item.active {
+	display: block;
+	left: 0;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item.active.left {
+	transform: translate3d(-100%,0,0);
+}
+main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item.next {
+	left: 0;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item.next.left {
+	left: 0;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
 main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item blockquote {
 	font-size: 1.11111rem;
 	line-height: 1.5;
