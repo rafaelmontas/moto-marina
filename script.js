@@ -57,21 +57,27 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }, 600)
 
   }
+  
+  setInterval(() => triggerSlide(currentIndex + 1), 8000)
 
-  const interval = setInterval(myInterval, 8000)
+  // const interval = setInterval(myInterval, 8000)
 
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden) {
-      clearInterval(interval)
-    } else {
-      console.log('document on focus')
-      setInterval(myInterval, 8000)
-    }
-  })
+  // document.addEventListener('visibilitychange', () => {
+  //   if (document.hidden || document.hasFocus()) {
+  //     console.log('lol')
+  //     clearInterval(interval)
+  //   } else {
+  //     console.log('document on focus')
+  //     setInterval(myInterval, 8000)
+  //   }
+  // })
 
-  function myInterval() {
-    // console.log('time')
-    triggerSlide(currentIndex + 1)
-  }
+
+  // setInterval(myInterval, 8000)
+
+  // function myInterval() {
+  //   console.log('time')
+  //   triggerSlide(currentIndex + 1)
+  // }
 
 });
