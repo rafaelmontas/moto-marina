@@ -4,9 +4,131 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../main.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+  <script src="../script.js" defer></script>
   <title>Moto Marina | Cayo Levantado</title>
 </head>
 <body>
-  
+  <header id="header">
+		<nav class="navigation" role="navigation">
+			<div class="logo">
+				<a href="/" class="logo-link">
+					<img src="../public/media/image2vector.svg" alt="logo">
+				</a>
+			</div>
+			<div class="nav-links">
+				<ul>
+					<li>
+						<a href="../index.html">Home</a>
+					</li>
+					<li>
+						<a href="./pages/cayo.html" class="active">Cayo Levantado</a>
+					</li>
+					<li>
+						<a href="/">Los Haitises</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="/">Whale Watching</a>
+					</li>
+					<li>
+						<a href="/">About Us</a>
+					</li>
+					<li>
+						<a href="/" class="book-button">Book Now</a>
+					</li>
+				</ul>
+			</div>
+			<div class="top-drawer" id="mobile-drawer">
+				<ul class="nav nav-tabs nav-stacked">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="./cayo.html">Cayo Levantado</a></li>
+					<li><a href="#">Los Haitises</a></li>
+					<li><a href="#">Whale Watching</a></li>
+					<li><a href="#">About Us</a></li>
+				</ul>
+			</div>
+			<span class="burger-menu" id="mobile-menu">
+				<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+				</svg>
+			</span>
+		</nav>
+	</header>
+  <main>
+    <section class="tour-hero">
+      <img src="../public/media/cayo/cayo-1.jpg"/>
+    </section>
+    <section class="tour-action">
+      <div class="booking-info">
+        <h2>Cayo Levantado</h2>
+        <p class="text">
+          With almost a decade of experience, we can confidently boast of being the ultimate champion of the game. All our instructors are well experienced and have rich tutoring expertise. With our top notch equipments that we update every year, we have a successful track record of every client leaving us completely happy and satisfied.
+        </p>
+        <div class="location-info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+          Samaná, Dominican Republic
+        </div>
+        <div class="tour-features">
+          <div class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
+              <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
+              <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+            </svg>
+            Seasoned Captain
+          </div>
+          <div class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
+              <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
+              <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+            </svg>
+            Experienced crew members
+          </div>
+          <div class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
+              <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
+              <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+            </svg>
+            Seasoned Captain
+          </div>
+          <div class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-square" viewBox="0 0 16 16">
+              <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
+              <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+            </svg>
+            Experienced crew members
+          </div>
+        </div>
+        <a href="#">Book now</a>
+      </div>
+      <div class="tour-photos">
+        <div class="photo-item">
+          <img src="../public/media/cayo/cayo-1.jpg"/>
+        </div>
+        <div class="photo-item">
+          <img src="../public/media/cayo/cayo-2.jpg"/>
+        </div>
+        <div class="photo-item">
+          <img src="../public/media/cayo/cayo-3.jpg"/>
+        </div>
+        <div class="photo-item">
+          <img src="../public/media/cayo/cayo-4.jpg"/>
+        </div>
+        <div class="photo-item">
+          <img src="../public/media/cayo/cayo-5.jpg"/>
+        </div>
+        <div class="photo-item">
+          <img src="../public/media/cayo/cayo-6.jpg"/>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

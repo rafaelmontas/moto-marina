@@ -93,7 +93,7 @@ header nav.navigation .nav-links ul li a {
 	/* text-transform: uppercase; */
 	color: #3b3331;
 }
-header nav.navigation .nav-links ul li a:hover {
+header nav.navigation .nav-links ul li a:hover, header nav.navigation .nav-links ul li a.active {
 	color: #D80118;
 	text-decoration: underline;
 	text-decoration-color: #D80118;
@@ -612,6 +612,128 @@ footer .footer-bottom p {
 }
 
 
+/* Tour pages */
+main .tour-hero {
+	height: 250px;
+	position: relative;
+	background-color: #fbfbfb;
+	margin-bottom: 60px;
+}
+main .tour-hero img {
+	object-position: center center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	height: 100%;
+	width: 100%;
+	/* z-index: -1; */
+	object-fit: cover;
+}
+main .tour-action {
+	padding: 0px 16px 40px;
+	font-family: 'Dosis', sans-serif;
+	max-width: 1140px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+main .tour-action .booking-info {
+	position: relative;
+	background-color: #fff;
+	margin-top: -20%;
+	margin-bottom: 3.33333rem;
+	padding: 30px 40px;
+	box-shadow: 0 4px 12px rgb(0 0 0 / 5%), 0 2px 6px rgb(0 0 0 / 15%);
+}
+main .tour-action .booking-info h2 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color: #3b3331;
+	font-family: Dosis,Helvetica,Arial,sans-serif;
+	font-weight: 800;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+}
+main .tour-action .booking-info p {
+	display: block;
+	margin-bottom: 1.5rem;
+	font-family: Roboto Condensed,Helvetica,Arial,sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #888;
+}
+main .tour-action .booking-info .location-info {
+	display: flex;
+	align-items: center;
+	font-size: 1.0rem;
+	color: #888;
+	padding-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
+	border-bottom: 1px dashed gray;
+}
+main .tour-action .booking-info .location-info svg {
+	margin-right: 5px;
+}
+main .tour-action .booking-info .tour-features {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-bottom: 1.5rem;
+	/* justify-content: space-between; */
+}
+main .tour-action .booking-info .tour-features .feature-item {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	margin-bottom: 15px;
+}
+main .tour-action .booking-info .tour-features .feature-item svg {
+	margin-right: 5px;
+	color: #0d5ef5;
+}
+main .tour-action .booking-info a {
+	width: 100%;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	padding: 10px 20px;
+	letter-spacing: 0.5px;
+	border: 2px solid transparent;
+	font-size: 18px;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #d80118;
+	font-family: ProximaNova,sans-serif;
+	box-sizing: border-box;
+	text-transform: uppercase;
+}
+main .tour-action .booking-info a:hover {
+	background-color: #bf0016;
+}
+main .tour-action .tour-photos {
+	display: flex;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	margin-right: -0.27778rem;
+}
+main .tour-action .tour-photos .photo-item {
+	position: relative;
+	width: calc(50% - 0.27778rem);
+	height: 110px;
+	margin: 0 0.27778rem 0.27778rem 0;
+	cursor: zoom-in;
+}
+main .tour-action .tour-photos .photo-item img {
+	object-position: center center;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+
 @media only screen and (min-width: 768px) {
 	/* Header */
   header {
@@ -665,6 +787,15 @@ footer .footer-bottom p {
 	main .about-us .image-grid-main .img-grid-inner .img-container {
 		min-width: 355px;
 		width: 100%;
+	}
+
+
+	/* Tour Pages */
+	main .tour-action .booking-info .tour-features {
+		flex-direction: row;
+	}
+	main .tour-action .tour-photos .photo-item {
+		width: calc(33.3% - 0.27778rem);
 	}
 }
 
@@ -725,6 +856,30 @@ footer .footer-bottom p {
 	}
 	footer .footer-top .footer-info.intro {
 		width: 33.33%;
+	}
+
+
+	/* Tour Pages */
+	main .tour-hero {
+		height: 350px;
+	}
+	main .tour-action {
+		flex-direction: row;
+	}
+	main .tour-action .booking-info {
+		padding: 2.94444rem 3.33333rem 2.77778rem;
+		width: 40%;
+	}
+	main .tour-action .booking-info h2 {
+		font-size: 1.77778rem;	
+	}
+	main .tour-action .booking-info .tour-features .feature-item svg {
+		width: 22px;
+		height: 22px;
+	}
+	main .tour-action .tour-photos {
+		width: 57%;
+		margin-left: 3%;
 	}
 }
 @media only screen and (min-width: 1200px) {
