@@ -686,7 +686,7 @@ main .tour-action .booking-info .tour-features {
 main .tour-action .booking-info .tour-features .feature-item {
 	display: flex;
 	align-items: center;
-	width: 50%;
+	width: 100%;
 	margin-bottom: 15px;
 }
 main .tour-action .booking-info .tour-features .feature-item svg {
@@ -731,6 +731,126 @@ main .tour-action .tour-photos .photo-item img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+}
+/* Video section */
+main .tour-video, main .accommodation {
+	padding: 60px 16px;
+	font-family: 'Dosis', sans-serif;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+main .tour-video h1, .accommodation h1 {
+	text-align: center;
+	font-family: ProximaNova,sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 4.5px;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+main .tour-video h2, .accommodation h2 {
+	text-align: center;
+	color: #3b3331;
+	font-size: 1.3rem;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: 60px;
+}
+main .tour-video .info-video, .accommodation .listings-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+main .tour-video .info-video .info-video-text {
+	color: #888888;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+main .tour-video .info-video .info-video-media {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+main .tour-video .info-video .info-video-media video {
+	width: 100%;
+}
+main .accommodation .listings-wrapper {
+	margin: 0 -16px;
+}
+main .accommodation .listings-wrapper .listing-card-container {
+	width: 100%;
+}
+main .accommodation .listings-wrapper .listing-card {
+	margin: 16px;
+	margin-bottom: 30px;
+	/* height: 360px; */
+	border-radius: 2px;
+	box-shadow: 0 0 5px 0 rgb(0 0 0 / 15%);
+	background-color: #fff;
+}
+main .accommodation .listings-wrapper .listing-card a {
+	text-decoration: none;
+	color: #000;
+}
+main .accommodation .listings-wrapper .listing-card a .img-container {
+	display: flex;
+	overflow: hidden;
+	height: 280px;
+	margin-bottom: 20px;
+	/* position: relative; */
+	border-radius: 2px 2px 0 0;
+	position: relative;
+}
+main .accommodation .listings-wrapper .listing-card a .img-container img {
+	object-fit: cover;
+	width: 100%;
+	display: block;
+	height: 100%;
+}
+main .accommodation .listings-wrapper .listing-card a .img-container span {
+	text-transform: uppercase;
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	padding: 4px 8px;
+	background-color: rgba(0, 0, 0, 0.15) !important;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 800;
+}
+main .accommodation .listings-wrapper .listing-card a .listing-info {
+	vertical-align: top;
+	padding: 0 10px 16px;
+}
+main .accommodation .listings-wrapper .listing-card a .listing-info h5 {
+	margin-bottom: 0.61111rem;
+	overflow-wrap: break-word;
+	font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 1.28571em;
+	color: rgb(72, 72, 72);
+}
+main .accommodation .listings-wrapper .listing-card a .listing-info .reviews svg {
+	color: #008489;
+}
+main .accommodation .listings-wrapper .listing-card a .card-footer {
+	border-top: 1px solid rgb(242, 242, 242);
+	padding: 12.5px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+main .accommodation .listings-wrapper .listing-card a .card-footer span {
+	font-size: 12px;
+	font-weight: 600;
+	color: var(--color-text-link, #008489) !important;
+	font-family: var(--font-font_family, Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif) !important;
+	text-decoration: var(--font-link-text-decoration, none) !important;
+}
+main .accommodation .listings-wrapper .listing-card a .card-footer img {
+	width: 24px;
+	height: 24px;
 }
 
 
@@ -794,8 +914,18 @@ main .tour-action .tour-photos .photo-item img {
 	main .tour-action .booking-info .tour-features {
 		flex-direction: row;
 	}
+	main .tour-action .booking-info .tour-features .feature-item {
+		width: 50%;
+	}
 	main .tour-action .tour-photos .photo-item {
 		width: calc(33.3% - 0.27778rem);
+	}
+	main .tour-video .info-video .info-video-media video {
+		width: 450px;
+	}
+	main .accommodation .listings-wrapper {
+		flex-direction: row;
+		justify-content: space-around;
 	}
 }
 
@@ -880,6 +1010,20 @@ main .tour-action .tour-photos .photo-item img {
 	main .tour-action .tour-photos {
 		width: 57%;
 		margin-left: 3%;
+	}
+	main .tour-video .info-video {
+		flex-direction: row;
+		align-items: center;
+	}
+	main .tour-video .info-video .info-video-text {
+		width: 80%;
+    text-align: left;
+	}
+	main .tour-video .info-video .info-video-media {
+		justify-content: end;
+	}
+	main .accommodation .listings-wrapper .listing-card-container {
+		max-width: 40%;
 	}
 }
 @media only screen and (min-width: 1200px) {
