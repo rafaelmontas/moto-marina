@@ -149,6 +149,13 @@ header nav.navigation .top-drawer.open ul li a {
 	from { color: #fbfbfb }
 	to   { color: #000 }
 }
+header nav.navigation .top-drawer.open ul li a.active {
+	animation: change2 0s step-end both;
+}
+@keyframes change2 {
+	from { color: #000 }
+	to   { color: #D80118 }
+}
 
 header nav.navigation .burger-menu {
 	display: block;
