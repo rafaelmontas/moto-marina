@@ -86,6 +86,7 @@ header nav.navigation .nav-links ul {
 header nav.navigation .nav-links ul li {
 	display: inline-block;
 	line-height: 90px;
+	z-index: 1;
 }
 header nav.navigation .nav-links ul li a {
 	padding: 12px 25px;
@@ -298,14 +299,14 @@ main .tours .tour-cards {
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 0 -16px;
+	margin: 0 -8px;
 }
 main .tours .tour-cards .tour-card-container {
 	width: 100%;
 	margin-bottom: 30px;
 }
 main .tours .tour-cards .tour-card-container .tour-card {
-	margin: 16px;
+	margin: 8px;
 	/* height: 360px; */
 	border-radius: 2px;
 	box-shadow: 0 0 5px 0 rgb(0 0 0 / 15%);
@@ -978,7 +979,7 @@ main .accommodation .listings-wrapper .listing-card a .card-footer img {
 		flex-direction: row;
 	}
 	main .tours .tour-cards .tour-card-container {
-		width: 33.3%;
+		width: 50%;
 	}
 	/* Carousel */
 	main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item {
@@ -1065,6 +1066,10 @@ main .accommodation .listings-wrapper .listing-card a .card-footer img {
 	}
 	header nav.navigation .nav-links ul li a {
 		padding: 12px 25px;
+	}
+	/* Cards */
+	main .tours .tour-cards .tour-card-container {
+		width: 25%;
 	}
 	/* About us section */
 	main .about-us .info-wrapper .image-grid-main .img-grid-inner .img-container {
