@@ -2,6 +2,9 @@
 	padding: 0;
 	margin: 0;
 }
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background-color: #fbfbfb;
 }
@@ -170,7 +173,7 @@ main .home-hero {
 	height: 550px;
 	padding: 0 16px;
 	position: relative;
-	background-color: #fbfbfb;
+	background-color: rgb(0 0 0 / 30%);
 }
 main .home-hero video {
 	object-position: center center;
@@ -181,7 +184,7 @@ main .home-hero video {
 	bottom: 0px;
 	height: 100%;
 	width: 100%;
-	/* z-index: -1; */
+	z-index: -1;
 	object-fit: cover;
 }
 main .home-hero .home-hero-img {
@@ -190,7 +193,8 @@ main .home-hero .home-hero-img {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-image: url('./public/media/cayo-img.jpeg');
+	z-index: -2;
+	background-image: url('./public/media/hero-img.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;	
@@ -412,10 +416,10 @@ main .testimonials .testimonial-container .testimonial-info .carousel-inner > .c
 	width: 100%;
 }
 main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item {
+	height: 335px;
 	position: relative;
 	display: none;
 	transition: left .6s ease-in-out;
-
 	transition: -webkit-transform .6s ease-in-out;
 	transition: transform .6s ease-in-out;
 	transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
@@ -511,7 +515,8 @@ main .about-us .about-info p {
 main .about-us .about-info-container {
 	margin-bottom: 30px;
 }
-main .about-us .about-info-container h5 {
+main .about-us .about-info-container a {
+	text-decoration: none;
 	color: #5897cc;
 	font-size: 18px;
 	text-transform: uppercase;
@@ -607,6 +612,19 @@ footer .footer-top .footer-info.social ul li a {
 	align-items: center;
 }
 footer .footer-top .footer-info.social ul li a svg {
+	margin-right: 10px;
+}
+footer .footer-top .footer-info.social .tripadvisor-logo {
+	margin-top: 15px;
+}
+footer .footer-top .footer-info.social .tripadvisor-logo a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #a5a2a1;
+}
+footer .footer-top .footer-info.social .tripadvisor-logo a img {
+	width: 30px;
 	margin-right: 10px;
 }
 footer .footer-bottom {
@@ -903,6 +921,10 @@ main .accommodation .listings-wrapper .listing-card a .card-footer img {
 	main .home-hero .overlay-text .text-container p {
 		font-size: 18px;
 	}
+	/* Carousel */
+	main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item {
+		height: 200px;
+	}
 	/* About us section */
 	main .about-us .image-grid-main {
 		flex-direction: row;
@@ -958,6 +980,10 @@ main .accommodation .listings-wrapper .listing-card a .card-footer img {
 	main .tours .tour-cards .tour-card-container {
 		width: 33.3%;
 	}
+	/* Carousel */
+	main .testimonials .testimonial-container .testimonial-info .carousel-inner .carousel-item {
+		height: 150px;
+	}
 	/* About us section */
 	main .about-us .info-wrapper {
 		flex-direction: row;
@@ -968,7 +994,7 @@ main .accommodation .listings-wrapper .listing-card a .card-footer img {
 	main .about-us .info-wrapper .about-info-container .about-info {
 		text-align: left;
 	}
-	main .about-us .info-wrapper .about-info-container h5 {
+	main .about-us .info-wrapper .about-info-container a {
 		display: block;
 	}
 	main .about-us .info-wrapper .image-grid-main {
