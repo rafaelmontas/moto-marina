@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Moto Marina Tours | On this excursion we go through the bay of Samaná in search of the Humpback Whales, in the company of a specialized guide.">
   <link rel="stylesheet" href="../main.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;700;800&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;700;800&display=swap" rel="stylesheet"> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
   <script src="../script.js" defer></script>
   <title>Moto Marina | Whale Watching</title>
@@ -70,7 +71,7 @@
 						<a href="tel:+18095382302">Contact Us</a>
 					</li> -->
 					<li>
-            <a id="button-booking" class="book-button" href="https://fareharbor.com/embeds/book/motomarinatours/?full-items=yes&flow=698003">Book Now</a>
+            <a id="button-booking-nav" class="book-button" href="https://fareharbor.com/embeds/book/motomarinatours/?full-items=yes&flow=698003">Book Now</a>
 						<!-- <a href="/" class="book-button">Book Now</a> -->
 					</li>
 				</ul>
@@ -94,7 +95,11 @@
 	</header>
   <main>
     <section class="tour-hero">
-      <img src="../public/media/whales/whale-1.jpeg"/>
+      <picture>
+        <source media="(max-width:500px)" srcset="../public/media/whales/whale-1-md-mb.webp">
+        <source media="(min-width:501px)" srcset="../public/media/whales/whale-1-md.webp">
+        <img src="../public/media/whales/whale-1-md.jpg" alt="whale photo hero"/>
+      </picture>
     </section>
     <section class="tour-action">
       <div class="booking-info">
@@ -138,27 +143,51 @@
             Crew trained in First Aid
           </div>
         </div>
-        <a id="button-booking" href="https://fareharbor.com/embeds/book/motomarinatours/?full-items=yes&flow=699974">Book Now</a>
+        <a id="button-booking-main" href="https://fareharbor.com/embeds/book/motomarinatours/?full-items=yes&flow=699974">Book Now</a>
         <!-- <a href="#">Book now</a> -->
       </div>
       <div class="tour-photos">
         <div class="photo-item">
-          <img src="../public/media/whales/whale-1.jpeg"/>
+          <picture>
+            <source media="(max-width:500px)" srcset="../public/media/whales/whale-1-xs.webp">
+            <source media="(min-width:501px)" srcset="../public/media/whales/whale-1-sm.webp">
+            <img src="../public/media/whales/whale-1-sm.jpeg" alt="whales photo 1"/>
+          </picture>
         </div>
         <div class="photo-item">
-          <img src="../public/media/whales/whale-2.jpg"/>
+          <picture>
+            <source media="(max-width:500px)" srcset="../public/media/whales/whale-2-xs.webp">
+            <source media="(min-width:501px)" srcset="../public/media/whales/whale-2-sm.webp">
+            <img src="../public/media/whales/whale-2-sm.jpg" alt="whales photo 2"/>
+          </picture>
         </div>
         <div class="photo-item">
-          <img src="../public/media/whales/whale-3.jpg"/>
+          <picture>
+            <source media="(max-width:500px)" srcset="../public/media/whales/whale-3-xs.webp">
+            <source media="(min-width:501px)" srcset="../public/media/whales/whale-3-sm.webp">
+            <img src="../public/media/whales/whale-3-sm.jpg" alt="whales photo 3"/>
+          </picture>
         </div>
         <div class="photo-item">
-          <img src="../public/media/whales/whale-4.jpg"/>
+          <picture>
+            <source media="(max-width:500px)" srcset="../public/media/whales/whale-4-xs.webp">
+            <source media="(min-width:501px)" srcset="../public/media/whales/whale-4-sm.webp">
+            <img src="../public/media/whales/whale-4-sm.jpg" alt="whales photo 4"/>
+          </picture>
         </div>
         <div class="photo-item">
-          <img src="../public/media/whales/whale-5.jpg"/>
+          <picture>
+            <source media="(max-width:500px)" srcset="../public/media/whales/whale-5-xs.webp">
+            <source media="(min-width:501px)" srcset="../public/media/whales/whale-5-sm.webp">
+            <img src="../public/media/whales/whale-5-sm.jpg" alt="whales photo 5"/>
+          </picture>
         </div>
         <div class="photo-item">
-          <img src="../public/media/whales/whale-6.jpg"/>
+          <picture>
+            <source media="(max-width:500px)" srcset="../public/media/whales/whale-6-xs.webp">
+            <source media="(min-width:501px)" srcset="../public/media/whales/whale-6-sm.webp">
+            <img src="../public/media/whales/whale-6-sm.jpg" alt="whales photo 6"/>
+          </picture>
         </div>
       </div>
     </section>
@@ -182,11 +211,14 @@
           <div class="listing-card">
             <a href="https://www.airbnb.com/rooms/49438923?guests=1&adults=1&s=67&unique_share_id=cbf6d8e6-7278-41c2-b941-1dbe989b9bbd" target="_blank">
               <div class="img-container">
-                <img src="../public/media/airbnb-studio-1.jpeg"/>
+                <picture>
+                  <source srcset="../public/media/airbnb-studio-1-sm.webp">
+                  <img src="../public/media/airbnb-studio-1-sm.jpeg" alt="Airbnb studio 1"/>
+                </picture>
                 <span>Preview</span>
               </div>
               <div class="listing-info">
-                <h5>Amazing Waterfront Studio - Breakfast included</h5>
+                <h3>Amazing Waterfront Studio - Breakfast included</h3>
                 <div class="reviews">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -207,7 +239,7 @@
               </div>
               <div class="card-footer">
                 <span>View On Airbnb</span>
-                <img src="../public/media/airbnb-1.svg"/>
+                <img src="../public/media/airbnb-1.svg" alt="Airbnb logo-1"/>
               </div>
             </a>
           </div>
@@ -216,11 +248,14 @@
           <div class="listing-card">
             <a href="https://www.airbnb.com/rooms/49748011?guests=1&adults=1&s=67&unique_share_id=4229aca1-ca7c-4d88-8f69-9f80d67a488f" target="_blank">
               <div class="img-container">
-                <img src="../public/media/airbnb-studio-2.jpeg"/>
+                <picture>
+                  <source srcset="../public/media/airbnb-studio-2-sm.webp">
+                  <img src="../public/media/airbnb-studio-2-sm.jpeg" alt="Airbnb studio 2"/>
+                </picture>
                 <span>Preview</span>
               </div>
               <div class="listing-info">
-                <h5>Beautiful Waterfront Studio - Breakfast included</h5>
+                <h3>Beautiful Waterfront Studio - Breakfast included</h3>
                 <div class="reviews">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -241,7 +276,7 @@
               </div>
               <div class="card-footer">
                 <span>View On Airbnb</span>
-                <img src="../public/media/airbnb-1.svg"/>
+                <img src="../public/media/airbnb-1.svg" alt="Airbnb logo-2"/>
               </div>
             </a>
           </div>
@@ -317,7 +352,7 @@
 				</div>
 				<div class="tripadvisor-logo">
 					<a href="https://www.tripadvisor.com/Attraction_Review-g811253-d2700903-Reviews-Moto_Marina_Tours-Santa_Barbara_de_Samana_Samana_Province_Dominican_Republic.html" target="_blank">
-						<img src="../public/media/tripadvisor.svg"/>
+						<img src="../public/media/tripadvisor.svg" alt="Tripadvisor logo"/>
 						Tripadvisor
 					</a>
 				</div>
