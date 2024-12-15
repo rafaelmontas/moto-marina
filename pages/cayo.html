@@ -41,15 +41,22 @@
     src="https://www.facebook.com/tr?id=459976255497652&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Meta Pixel Code -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-219216482-1">
-  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXXBCVH1MQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-219216482-1');
+    gtag('config', 'G-QXXBCVH1MQ');
+    gtag('config', 'AW-10847490568');
+  </script>
+  <!-- Event snippet for Begin checkout conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion() {
+      gtag('event', 'conversion', { 'send_to': 'AW-10847490568/K9lmCNCG4fcZEIikvrQo' });
+      return false;
+    }
   </script>
 </head>
 <body>
@@ -83,7 +90,7 @@
 						<a href="tel:+18095382302">Contact Us</a>
 					</li> -->
 					<li>
-            <a id="button-booking-nav" class="book-button" data-target="tiqeti" href="https://www.tiqeti.com/embeds/ikwZmmLkgDqFFronhtHd7mDo/items">Book Now</a>
+            <a id="button-booking-nav" class="book-button" onclick="return gtag_report_conversion()" data-target="tiqeti" href="https://www.tiqeti.com/embeds/ikwZmmLkgDqFFronhtHd7mDo/items">Book Now</a>
 						<!-- <a href="/" class="book-button">Book Now</a> -->
 					</li>
 				</ul>
@@ -158,7 +165,7 @@
             Crew trained in First Aid
           </div>
         </div>
-        <a id="button-booking-main" data-target="tiqeti" href="https://www.tiqeti.com/embeds/ikwZmmLkgDqFFronhtHd7mDo/items">Book Now</a>
+        <a id="button-booking-main" onclick="return gtag_report_conversion()" data-target="tiqeti" href="https://www.tiqeti.com/embeds/ikwZmmLkgDqFFronhtHd7mDo/items">Book Now</a>
         <!-- <a href="#">Book now</a> -->
       </div>
       <div class="tour-photos">
